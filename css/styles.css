@@ -1,0 +1,38 @@
+body,
+html {
+    background-color: darkslategray;
+    overflow: hidden;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: slategray;
+    min-width: 100vw;
+    max-height: 99vh;
+    min-height: 97vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    min-width: 40vw;
+    background-color: red;
+}
+.skill-btn {
+    height: 50px;
+    background-color: grey;
+    margin-bottom: 5px;
+    border: none;
+    text-align: left;
+}
+.progress {
+    height: 100%;
+    width: 0%;
+    background-color: purple;
+    color: white;
+}
+
+@keyframes progressAnimation {
+    from    { width: 0% }
+    to      { width: 100% }
+}
